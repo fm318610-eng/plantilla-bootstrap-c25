@@ -7,3 +7,11 @@ body{
 main{
     flex-grow: 1;
 }
+.medidas{
+    width: 500px;
+    height: 200px;
+}
+
+#typography{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

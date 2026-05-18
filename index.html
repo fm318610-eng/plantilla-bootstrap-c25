@@ -88,7 +88,9 @@
               <p class="h3 text-primary text-uppercase">
                 texto mayusculas azul
               </p>
-              <p class="text-decoration-line-through">Texto itálico tachado</p>
+              <p class="text-decoration-line-through fst-italic">
+                Texto itálico tachado
+              </p>
             </div>
             <div
               class="w-100 container border border-dark rounded bg-dark-subtle medidas"
@@ -101,15 +103,49 @@
             </div>
           </div>
         </article>
-        <article>
-          <h2>Utilizades de CSS (Bordes, Sombras y Espacios)</h2>
-          <p>Bordes y Sombras</p>
-          <div class="container border bg-secondary bg-gradient">
-            <div class="col-md-4 mb-3 w-25 h-25">
-              <p class="border border-4 border-primary p-4 rounded ">Sombra pequeña</p>
+        <!-- sombras  -->
+        <article class="container my-4 row-cols-1">
+          <h2 class="mb-4">
+            2. Utilizades de CSS (Bordes, Sombras y Espacios)
+          </h2>
+          <h3 class="mb-3">Bordes y Sombras</h3>
+          <div class="d-flex flex-wrap gap-3 ">
+            <div class="d-flex flex-wrap flex-fill w-75 justify-content-center gap-4 bg-secondary  py-5">
+              <div
+                class="bg-primary-subtle p-4 border border-3 border-primary rounded shadow-sm"
+              >
+                Sombra pequeña
+              </div>
+
+              <div
+                class="p-4 bg-primary-subtle border border-2 border-start-0 border-success rounded-end shadow"
+              >
+                Sombra Media
+              </div>
+              <div
+                class="p-4 bg-primary-subtle shadow-lg rounded-circle d-flex align-items-center text-center justify-content-center"
+                style="width: 120px; height: 120px"
+              >
+                Sombra Grande
+              </div>
             </div>
-            <div><p>Sombra Media</p></div>
-            <div><p>Sombra Grande</p></div>
+
+            <div class="flex-fill ">
+              <h4>Opacidad</h4>
+
+              <div class="p-2 bg-primary text-white opacity-100 mb-1">
+                Opacidad 100%
+              </div>
+              <div class="p-2 bg-primary text-white opacity-75 mb-1">
+                Opacidad 75%
+              </div>
+              <div class="p-2 bg-primary text-white opacity-50 mb-1">
+                Opacidad 50%
+              </div>
+              <div class="p-2 bg-primary text-white opacity-25 mb-1">
+                Opacidad 25%
+              </div>
+            </div>
           </div>
         </article>
       </section>

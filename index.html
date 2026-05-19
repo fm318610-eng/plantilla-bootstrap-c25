@@ -109,8 +109,10 @@
             2. Utilizades de CSS (Bordes, Sombras y Espacios)
           </h2>
           <h3 class="mb-3">Bordes y Sombras</h3>
-          <div class="d-flex flex-wrap gap-3 ">
-            <div class="d-flex flex-wrap flex-fill w-75 justify-content-center gap-4 bg-secondary  py-5">
+          <div class="d-flex flex-wrap gap-3">
+            <div
+              class="d-flex flex-wrap flex-fill w-75 justify-content-center gap-4 bg-secondary py-5"
+            >
               <div
                 class="bg-primary-subtle p-4 border border-3 border-primary rounded shadow-sm"
               >
@@ -130,7 +132,7 @@
               </div>
             </div>
 
-            <div class="flex-fill ">
+            <div class="flex-fill">
               <h4>Opacidad</h4>
 
               <div class="p-2 bg-primary text-white opacity-100 mb-1">
@@ -153,37 +155,94 @@
         <article class="container">
           <h3>Espaciado (Márgenes y Rellenos)</h3>
           <p>Clases m-* (margin) y p-* (padding). De 0 a 5.</p>
-          
-          <div class=" border border-3 rounded p-4">
-            <div class="d-flex  align-items-end  g-3 mb-4" style="height: 150px;">
-            <div class=" bg-primary text-white mx-2 p-1">
-              p-1
+
+          <div class="border border-3 rounded p-4">
+            <div class="d-flex align-items-end g-3 mb-4" style="height: 150px">
+              <div class="bg-primary text-white mx-2 p-1">p-1</div>
+              <div class="bg-primary text-white mx-2 p-3">p-3</div>
+              <div class="bg-primary text-white p-5 mx-2">p-5</div>
             </div>
-            <div class="bg-primary text-white mx-2 p-3">
-              p-3
-            </div>
-            <div class="bg-primary text-white p-5 mx-2">
-              p-5
-            </div>
-            </div>
-            <div class="d-flex flex-wrap gap-2 border-top ">
-            <div class="bg-secondary mt-4 p-2 text-white rounded">Sin Margen Extra</div>
-            <div class="bg-danger p-2 mt-4 text-white rounded ms-md-5">ms-md-5 (Margen condicional)</div>
+            <div class="d-flex flex-wrap gap-2 border-top">
+              <div class="bg-secondary mt-4 p-2 text-white rounded">
+                Sin Margen Extra
+              </div>
+              <div class="bg-danger p-2 mt-4 text-white rounded ms-md-5">
+                ms-md-5 (Margen condicional)
+              </div>
             </div>
           </div>
         </article>
         <article class="container my-4 border-bottom pb-4">
           <h3>3.Botones y Estados</h3>
           <div class="d-flex flex-wrap gap-2 mb-3">
-          <button class="btn btn-primary">Primary</button>
-          <button class="btn btn-outline-primary">Outline</button>
-          <button class="btn btn-primary" disabled>Deshabilitado</button>
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-outline-primary">Outline</button>
+            <button class="btn btn-primary" disabled>Deshabilitado</button>
           </div>
           <div class="d-flex flex-wrap align-items-center gap-2">
-          <button class="btn btn-success btn-lg">Grande</button>
-          <button class="btn btn-warning">Normal</button>
-          <button class="btn btn-danger btn-sm">Pequeño</button>
-          <button class="btn btn-link">Enlace</button>
+            <button class="btn btn-success btn-lg">Grande</button>
+            <button class="btn btn-warning">Normal</button>
+            <button class="btn btn-danger btn-sm">Pequeño</button>
+            <button class="btn btn-link">Enlace</button>
+          </div>
+        </article>
+        <article class="container border-bottom pb-4">
+          <h3>4.Tarjetas (Cards) con Flexbox</h3>
+          <div class="d-flex flex-column flex-md-row  gap-4">
+            
+              <div class="card" style="width: 18rem;">
+                <div class="bg-primary rounded p-2 ps-3">Header</div>
+  <img src="./img/non-copyrighted-purple-electric.png" class="card-img-top" alt="galaxia morada">
+  <div class="card-body">
+    <h5 class="card-title">Titulo Estilizado</h5>
+    <p class="card-text">Maquetado con Flexbox puro de Bootstrap.</p>
+  </div>
+  <ul class="text-center">
+    <li class="list-group-item">Accion</li>
+   
+  </ul>
+  
+</div>
+            <div class="flex-grow-1">
+              <h4>Layuot Flexible</h4>
+
+              <p>
+                Bootstrap permite combinar utilidades de flexbox para crear
+                layouts complejos sin depender de las 12 columnas.
+              </p>
+              <p>
+                En este caso cree mi propio estilo .flex-1 y .flex-2 usando las
+                propiedades de flexbox en mi css flex: 1 o flex: 2
+              </p>
+
+              <div class="mb-4 d-flex align-items-center position-relative">
+                <input
+                  type="text"
+                  class="form-control p-3"
+                  id="formGroupExampleInput"
+                  placeholder="Item de lista con Badge"
+                />
+                <div
+                  class="badge bg-primary d-flex justify-content-center position-absolute end-0 me-3"
+                >
+                  14
+                </div>
+              </div>
+
+              <div class="mb-4 d-flex align-items-center position-relative">
+                <input
+                  type="text"
+                  class="form-control p-3"
+                  id="formGroupExampleInput2"
+                  placeholder="Notificaciones"
+                />
+                <div
+                  class="bg-danger badge position-absolute end-0 me-3 d-flex justify-content-center"
+                >
+                  Nuevo
+                </div>
+              </div>
+            </div>
           </div>
         </article>
       </section>

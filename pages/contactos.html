@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Plantilla de componentes de bootstrap" />
+    <meta name="author" content="Molina Florencia" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Plantilla de bootstrap</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-primary navbar-expand-lg">
+        <div class="container">
+          <a href="../index.html" class="navbar-brand">Plantilla de bootstrap</a>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#opcionesMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="opcionesMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./grilla.html">Grilla</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactos.html">Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Formularios con Stacks</h1>
+      <div class="card bg-dark text-white p-4 border-secondary rounded">
+        <form action="#">
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <label for="floatingInputGroup1" class="form-label fw-bold"
+                >Nombre</label
+              >
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInputGroup1"
+                  placeholder="Username"
+                />
+                <label for="floatingInputGroup1">Ej: Florencia</label>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="exampleInputEmail1" class="form-label fw-bold"
+                >Email</label
+              >
+              <div class="form-floating">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email@ejemplo.com</label>
+              </div>
+            </div>
+          </div>
+          <label for="exampleInputEmail1" class="form-label fw-bold"
+            >Mensaje</label
+          >
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="floatingTextarea2"
+              style="height: 100px"
+            ></textarea>
+            <label for="floatingTextarea2">Agrega aquí tu mensaje</label>
+          </div>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="switchCheckDefault"
+            />
+            <label class="form-check-label" for="switchCheckDefault"
+              >Aceptar términos (Switch)</label
+            >
+          </div>
+          <form>
+            <fieldset>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </fieldset>
+          </form>
+        </form>
+      </div>
+    </main>
+    <footer class="text-center bg-dark-subtle py-4">
+      <p>&copy; Todos los derechos reservados 2026</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
